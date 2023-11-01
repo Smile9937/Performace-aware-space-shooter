@@ -19,7 +19,7 @@ MonoBehaviour:
   playerBulletSpeed: 10
   spawnRateInSeconds: 1
   amountToSpawn: 10000
-  spawnOnStart: 1
+  spawnOnStart: 0
   spawnOverTime: 0
   enemyPrefab: {fileID: 5052946696425896762, guid: 0ebe7025a0434e34b88b2bcc7e41edc8, type: 3}
   enemyMoveSpeed: 0.8
