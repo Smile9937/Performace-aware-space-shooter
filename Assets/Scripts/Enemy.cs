@@ -2,20 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CustomCollider))]
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private CustomCollider customCollider;
     [SerializeField] private GameStats gameStats;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
-    private void FixedUpdate()
+    private void Update()
     {
-        rb.MovePosition(transform.position + gameStats.EnemyMoveSpeed * Time.deltaTime * transform.up);
-    }
+        transform.position += gameStats.EnemyMoveSpeed * Time.deltaTime * transform.up;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(gameObject);
+        if (customCollider.CheckForCollision(CollisionLayer.PlayerBullet ,out GameObject collisionObject))
+        {
+            Destroy(collisionObject);
+            Destroy(gameObject);
+        }
+
+        if (CameraEdges.CheckIfInsideScreenBounds(transform.position, 2))
+        {
+            Destroy(gameObject);
+        }
     }
 }

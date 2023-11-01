@@ -20,15 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private float attackTimer = 0f;
 
-    private Vector2 screenEdges;
-
-    private void Awake()
-    {
-        playerInput = new PlayerInput();
-
-        Camera camera = Camera.main;
-        screenEdges = camera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, camera.nearClipPlane));
-    }
+    private void Awake() => playerInput = new PlayerInput();
 
     private void OnEnable()
     {
@@ -78,7 +70,7 @@ public class PlayerController : MonoBehaviour
         Vector2 movementDirection = moveDirection;
 
         Vector2 movePosition = (Vector2)transform.position + gameStats.PlayerMoveSpeed * Time.deltaTime * movementDirection;
-        Vector2 clampedPosition = new Vector2(Mathf.Clamp(movePosition.x, -screenEdges.x, screenEdges.x), Mathf.Clamp(movePosition.y, -screenEdges.y, screenEdges.y));
+        Vector2 clampedPosition = new Vector2(Mathf.Clamp(movePosition.x, -CameraEdges.ScreenEdges.x, CameraEdges.ScreenEdges.x), Mathf.Clamp(movePosition.y, -CameraEdges.ScreenEdges.y, CameraEdges.ScreenEdges.y));
 
         rb.MovePosition(clampedPosition);
 

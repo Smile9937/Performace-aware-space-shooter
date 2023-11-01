@@ -19,17 +19,8 @@ MonoBehaviour:
   playerBulletSpeed: 10
   spawnRateInSeconds: 1
   amountToSpawn: 10000
-  spawnOnStart: 0
-  spawnOverTime: 1
+  spawnOnStart: 1
+  spawnOverTime: 0
   enemyPrefab: {fileID: 5052946696425896762, guid: 0ebe7025a0434e34b88b2bcc7e41edc8, type: 3}
   enemyMoveSpeed: 0.8
-  enemyAttackDelayInSeconds: 1
-  enemyProjectile: {fileID: 9014270647064037463, guid: af94bb9d41c206944b3ee9b4e2aff617, type: 3}
-  enemyBulletCount: 50
-  enemyBulletSpeed: 1.5
-  moveUp: 273
-  moveDown: 274
-  moveLeft: 276
-  moveRight: 275
-  shoot: 122
   playerAutoAttack: 0

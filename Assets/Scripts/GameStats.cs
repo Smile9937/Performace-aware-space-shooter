@@ -2,15 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum KeyBind
-{
-    MoveUp,
-    MoveDown,
-    MoveLeft,
-    MoveRight,
-    Shoot,
-}
-
 [CreateAssetMenu(menuName = "Game Stats", fileName = "Game Stats")]
 public class GameStats : ScriptableObject
 {

@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3722691813651104942}
   - component: {fileID: 9014270647064037463}
-  - component: {fileID: 1283441563228048392}
-  - component: {fileID: 5763463747574202282}
+  - component: {fileID: 6942761733864381925}
   m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -47,70 +46,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29643f86a1967484c846a642f8d31cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 5763463747574202282}
+  customCollider: {fileID: 6942761733864381925}
+  rb: {fileID: 0}
   spriteRenderer: {fileID: 2885576595532583296}
---- !u!70 &1283441563228048392
-CapsuleCollider2D:
+--- !u!114 &6942761733864381925
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710959993893191187}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
-  m_Size: {x: 0.11, y: 0.51}
-  m_Direction: 0
---- !u!50 &5763463747574202282
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710959993893191187}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc14e549a80cbf04a8ac9c511aaa0729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayer: 1
+  targetCollisionLayer: 0
+  size: 0.35
 --- !u!1 &8924160091224481244
 GameObject:
   m_ObjectHideFlags: 0
