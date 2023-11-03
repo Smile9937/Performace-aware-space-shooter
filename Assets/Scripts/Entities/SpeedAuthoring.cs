@@ -14,8 +14,7 @@ public class SpeedBaker : Baker<SpeedAuthoring>
     {
         Entity entity = GetEntity(TransformUsageFlags.Dynamic);
         AddComponent(entity, new Speed {
-            value = authoring.value,
-            pos = new Vector3(2, 2, 2),
+            value = authoring.value
         });
     }
 }

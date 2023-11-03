@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8443581343085144887}
-  - component: {fileID: 2565865967154701866}
+  - component: {fileID: 1453121980579410898}
   - component: {fileID: 3545262218723570998}
   m_Layer: 0
-  m_Name: Enemy 1
+  m_Name: Enemy Entity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2565865967154701866
+--- !u!114 &1453121980579410898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,10 +42,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4298791184319209270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55258b63f31662e4fa89a3d57b6a4a54, type: 3}
+  m_Script: {fileID: 11500000, guid: b50f140191d061048afe12ae2354f30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 5
+  speed: 3
+  colliderSize: 1
 --- !u!212 &3545262218723570998
 SpriteRenderer:
   m_ObjectHideFlags: 0

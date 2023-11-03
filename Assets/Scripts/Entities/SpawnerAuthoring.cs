@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpawnerAuthoring : MonoBehaviour
 {
     public GameObject prefab;
-    public float spawRate;
+    public float spawnRate;
 }
 
 public class SpawnerBaker : Baker<SpawnerAuthoring>
@@ -18,7 +18,7 @@ public class SpawnerBaker : Baker<SpawnerAuthoring>
             prefab = GetEntity(authoring.prefab, TransformUsageFlags.Dynamic),
             spawnPosition = authoring.transform.position,
             nextSpawnTime = 0f,
-            spawnRate = authoring.spawRate
+            spawnRate = authoring.spawnRate
             
         });
     }

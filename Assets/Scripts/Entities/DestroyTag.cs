@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
-public struct Speed : IComponentData
+public struct DestroyTag : IComponentData
 {
-    public float value;
 }

@@ -11,5 +11,4 @@ public struct Spawner : IComponentData
     public float3 spawnPosition;
     public float nextSpawnTime;
     public float spawnRate;
-   // public HashSet<Entity> entities;
 }

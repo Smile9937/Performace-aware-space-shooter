@@ -12,12 +12,14 @@ public class GameStats : ScriptableObject
     [SerializeField] private float playerTurnSpeed = 0.3f;
     [SerializeField] private float playerAttackDelayInSeconds = 0.2f;
     [SerializeField] private Bullet playerBulletPrefab;
+    [SerializeField] private GameObject playerBulletEntityPrefab;
     [SerializeField] private float playerBulletSpeed = 7f;
 
     public float PlayerMoveSpeed => playerMoveSpeed;
     public float PlayerTurnSpeed => playerTurnSpeed;
     public float PlayerAttackSpeedInSeconds => playerAttackDelayInSeconds;
     public Bullet PlayerBullet => playerBulletPrefab;
+    public GameObject PlayerBulletEntityPrefab => playerBulletEntityPrefab;
     public float PlayerBulletSpeed => playerBulletSpeed;
     #endregion
 

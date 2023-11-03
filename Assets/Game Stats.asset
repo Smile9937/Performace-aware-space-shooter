@@ -16,10 +16,11 @@ MonoBehaviour:
   playerTurnSpeed: 1000
   playerAttackDelayInSeconds: 0.2
   playerBulletPrefab: {fileID: 9014270647064037463, guid: be117e9ff84bae4468537ed09a49fbdb, type: 3}
+  playerBulletEntityPrefab: {fileID: 2221684749546402112, guid: 64c007b0493588d43b45e55ae03a22a8, type: 3}
   playerBulletSpeed: 10
   spawnRateInSeconds: 1
   amountToSpawn: 10000
-  spawnOnStart: 0
+  spawnOnStart: 1
   spawnOverTime: 0
   enemyPrefab: {fileID: 5052946696425896762, guid: 0ebe7025a0434e34b88b2bcc7e41edc8, type: 3}
   enemyMoveSpeed: 0.8

@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29643f86a1967484c846a642f8d31cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customCollider: {fileID: 6942761733864381925}
   rb: {fileID: 0}
   spriteRenderer: {fileID: 2885576595532583296}
 --- !u!114 &6942761733864381925
@@ -62,8 +61,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionLayer: 1
-  targetCollisionLayer: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   size: 0.35
+  checkForCollision: 0
 --- !u!1 &8924160091224481244
 GameObject:
   m_ObjectHideFlags: 0
