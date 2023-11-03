@@ -10,3 +10,5 @@ The game lagged a lot and was consistently below 5 fps.
 To improve the performance I made a custom collision script which uses a dictionary with hash sets to separate the bullets from the enemies and then I used aabb to check if the enemies collided with the bullets. I also move them by directly moving the transform in update, This improved the performance massively.
 
 The game now runs between 30 - 60 fps in build depending on if the player is attacking since the enemies now need to check for collision.
+
+I made a solution using dots entities as well but it didn't work in the build of the game.
